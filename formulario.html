@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.clase1 {
+	width: 400px;
+}
+-->
+</style></head>
+
+<body>
+<p>&nbsp;</p>
+<fieldset class="clase1">
+  <legend>Envio de mis comentarios</legend>
+  <form id="form1" name="form1" method="post" action="">
+    <table width="472" border="0">
+      <tr>
+        <td width="68"><span id="sprytextfield4">
+          <label>Nombre</label>
+        </span></td>
+        <td width="394"><span id="sprytextfield1">
+          <label>
+            <input name="nombre" type="text" id="nombre" size="35" />
+          </label>
+        <span class="textfieldRequiredMsg">Se necesita un valor.</span></span></td>
+      </tr>
+      <tr>
+        <td>Apellidos</td>
+        <td><span id="sprytextfield2">
+          <label>
+            <input name="apellidos" type="text" id="apellidos" size="35" />
+          </label>
+        <span class="textfieldRequiredMsg">Se necesita un valor.</span></span></td>
+      </tr>
+      <tr >
+        <td height="59" colspan="2" align="left"><p>&nbsp;</p>
+        <p>Escribe tu comentario</p></td>     
+      </tr>
+      <tr>
+        <td height="98" colspan="2"><span id="sprytextarea1">
+          
+          <label>
+            <textarea name="comentarios" id="comentarios" cols="35" rows="5"></textarea>
+          </label>
+        <span class="textareaRequiredMsg">Se necesita un valor.</span></span></td>
+        
+      </tr>
+      <tr>
+        <td><span id="sprytextfield5">
+          <label>Email</label>
+        </span></td>
+        <td><span id="sprytextfield3">
+          <label>
+            <input name="email" type="text" id="email" size="30" />
+          </label>
+        <span class="textfieldRequiredMsg">Se necesita un valor.</span><span class="textfieldInvalidFormatMsg">Formato no válido.</span></span></td>
+      </tr>
+    </table>
+    <p>
+      <label> 
+        <input type="submit" name="enviar" id="enviar" value="Enviar" />
+      </label>
+      <label>
+        <input type="reset" name="restablecer" id="restablecer" value="Restablecer" />
+      </label>
+    </p>
+    <p>&nbsp;</p>
+  </form>
+</fieldset>
+<p>&nbsp;</p>
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2");
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3", "email");
+//-->
+</script>
+</body>
+</html>
